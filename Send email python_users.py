@@ -44,7 +44,7 @@ def sendEmail(to_list,run_output,users): # The function gets 1. list to send
     print("Message length is", len(msg))
 
     try:
-        server = smtplib.SMTP('mailhost.****.co.il') # hosting email of company ( ex: 'mailhost.indigo.co.il')
+        server = smtplib.SMTP('mailhost.****.co.il') # hosting email of company ( ex: 'mailhost.google.com')
         server.set_debuglevel(1)
         server.sendmail(fromaddr, toaddrs, msg)
 
